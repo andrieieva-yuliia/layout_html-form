@@ -3,6 +3,10 @@
   margin-bottom: 10px;
 }
 
+.form-field-1 {
+  display: block;
+}
+
 .group {
   margin-bottom: 20px;
 }

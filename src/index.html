@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form
     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post"
     >
       <fieldset class="group">
         <legend>Personal information</legend>
-
         <label class="form-field">
           Surname:
           <input
@@ -50,18 +48,23 @@
 
         <label class="form-field">
           Full date of birth:
-          <input type="date" name="date-of-birth">
+          <input
+            type="date"
+            name="date-of-birth"
+          >
         </label>
 
-        <label class="form-field">
-          <label>I accept the terms of the agreement</label>
-          <input type="checkbox" name="terms">
+        <label class="form-field-1">
+          <label>I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            name="terms"
+          >
         </label>
       </fieldset>
 
       <fieldset class="group">
         <legend>Registration</legend>
-
         <label class="form-field">
           E-mail:
           <input
@@ -72,7 +75,7 @@
           >
         </label>
 
-        <label class="form-field">
+        <label class="form-field-1">
           Password:
           <input
             type="password"
@@ -86,7 +89,6 @@
 
       <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-
         <div class="form-field">
           Do you love cats?
           <label>
@@ -115,7 +117,12 @@
 
         <label class="form-field">
           What time do you go to bed?
-          <input type="time" name="time">
+
+          <input
+            type="time"
+            name="time"
+            step="2"
+          >
         </label>
 
         <label class="form-field">
@@ -127,20 +134,18 @@
           </select>
         </label>
 
-        <label class="form-field">
+        <label class="form-field-1">
             How do you rate our work?
           <input
             type="range"
             name="rate"
-            min="0"
-            max="10"
+            value="0"
           >
         </label>
       </fieldset>
 
       <fieldset class="group">
         <legend>Additional info:</legend>
-
         <label class="form-field">
           Comments:
           <textarea
@@ -149,7 +154,7 @@
          ></textarea>
         </label>
 
-        <label class="form-field">
+        <label class="form-field-1">
           Would you recommend us?
           <select name="cars">
             <option value="yes">yes</option>
